@@ -1,37 +1,66 @@
 <!DOCTYPE html>
+<!-- HTML5の宣言 -->
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ひき肉です！ルーレット</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>ひき肉です！ルーレット</h1>
-    <p>遊び方：ひき肉です！を3つそろえましょう</p>
+  <!-- ページの言語を日本語に指定 -->
 
+  <head>
+    <!-- ヘッド部分の開始 -->
+    <meta charset="UTF-8" />
+    <!-- 文字エンコーディングをUTF-8に指定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- モバイル対応のためのビューポート設定 -->
+    <title>ひき肉です！ルーレット</title>
+    <!-- ページのタイトル -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- 外部CSSファイルのリンク -->
+  </head>
+  <!-- ヘッド部分の終了 -->
+
+  <body>
+    <!-- ボディ部分の開始 -->
+    <h1>ひき肉です！ルーレット</h1>
+    <!-- ゲームのメインタイトル -->
+    <p>遊び方：ひき肉です！を3つそろえましょう</p>
+    <!-- ゲームの説明 -->
+
+    <!-- ルーレットの主要部分を囲むコンテナ -->
     <div class="roulettes-wrapper">
+      <!-- 1つ目のルーレットコンテナ -->
       <div class="roulette-container">
         <div class="roulette">
+          <!-- ルーレット画像を表示する部分 -->
           <img src="images/r1.jpg" alt="Roulette Image" class="image" />
+          <!-- 初期表示画像 -->
         </div>
         <button class="stop-button">停止</button>
+        <!-- 1つ目のルーレット停止ボタン -->
       </div>
+
+      <!-- 2つ目のルーレットコンテナ -->
       <div class="roulette-container">
         <div class="roulette">
           <img src="images/r1.jpg" alt="Roulette Image" class="image" />
         </div>
         <button class="stop-button">停止</button>
+        <!-- 2つ目のルーレット停止ボタン -->
       </div>
+
+      <!-- 3つ目のルーレットコンテナ -->
       <div class="roulette-container">
         <div class="roulette">
           <img src="images/r1.jpg" alt="Roulette Image" class="image" />
         </div>
         <button class="stop-button">停止</button>
+        <!-- 3つ目のルーレット停止ボタン -->
       </div>
     </div>
+
     <button id="reset">リセット</button>
+    <!-- ルーレットをリセットするボタン -->
 
     <script src="main.js"></script>
+    <!-- 外部JavaScriptファイルのリンク -->
   </body>
+  <!-- ボディ部分の終了 -->
 </html>
+<!-- HTMLの終了 -->

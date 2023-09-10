@@ -1,60 +1,67 @@
+/* 全体のスタイリング */
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: "Arial", sans-serif;
+  display: flex; /* フレックスボックスのコンテナとして設定 */
+  flex-direction: column; /* 子要素を垂直方向に配置 */
+  align-items: center; /* 子要素を水平方向の中央に配置 */
+  justify-content: center; /* 子要素を垂直方向の中央に配置 */
+  height: 100vh; /* 画面の高さ全体を使用 */
+  font-family: "Arial", sans-serif; /* フォントをArialまたはsans-serifに設定 */
 }
+
+/* タイトル(h1)と説明(p)のスタイリング */
 h1,
 p {
-  text-align: center;
-  margin-bottom: 4px;
+  text-align: center; /* テキストを中央寄せ */
+  margin-bottom: 4px; /* 下側の余白を4ピクセルに設定 */
 }
 
+/* 3つのルーレットを配置するコンテナのスタイリング */
 .roulettes-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  max-width: 1550px; /* 画像の横幅 × 3 + 余白を考慮 */
-  margin-bottom: 10px;
+  display: flex; /* フレックスボックスのコンテナとして設定 */
+  justify-content: space-between; /* 子要素の間に均等なスペースを配置 */
+  width: 80%; /* 幅を全体の80%に設定 */
+  max-width: 1550px; /* 最大幅を1550ピクセルに設定 */
+  margin-bottom: 10px; /* 下側の余白を10ピクセルに設定 */
 }
 
+/* 各ルーレットとその停止ボタンのコンテナのスタイリング */
 .roulette-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px; /* 間隔を調整 */
+  display: flex; /* フレックスボックスのコンテナとして設定 */
+  flex-direction: column; /* 子要素を垂直方向に配置 */
+  align-items: center; /* 子要素を水平方向の中央に配置 */
+  margin: 0 10px; /* 左右の余白を10ピクセルに設定 */
 }
 
+/* 各ルーレットのスタイリング */
 .roulette {
-  width: 350px;
-  /* height: 800px; */
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 350px; /* 幅を350ピクセルに設定 */
+  border: 2px solid black; /* 黒い2ピクセルの境界線を追加 */
+  display: flex; /* フレックスボックスのコンテナとして設定 */
+  align-items: center; /* 子要素を垂直方向の中央に配置 */
+  justify-content: center; /* 子要素を水平方向の中央に配置 */
 }
 
+/* ルーレット内の画像のスタイリング */
 .image {
-  width: 350px;
-  /* height: 800px; */
+  width: 350px; /* 幅を350ピクセルに設定 */
 }
 
+/* 停止ボタンとリセットボタンのスタイリング */
 .stop-button,
 #reset {
-  margin-top: 10px;
-  padding: 10px 20px; /* ボタンのサイズを大きくする */
-  font-size: 20px; /* 文字サイズを大きくする */
-  cursor: pointer;
-  border: none;
-  background-color: #007bff; /* 色を変更 */
-  color: white; /* 文字色を変更 */
-  border-radius: 5px; /* 角を丸める */
-  transition: background-color 0.3s; /* ホバー時のアニメーションを追加 */
+  margin-top: 10px; /* 上側の余白を10ピクセルに設定 */
+  padding: 10px 20px; /* 内側の余白を上下10ピクセル、左右20ピクセルに設定 */
+  font-size: 20px; /* 文字サイズを20ピクセルに設定 */
+  cursor: pointer; /* マウスカーソルを手の形に変更 */
+  border: none; /* 境界線を削除 */
+  background-color: #007bff; /* 背景色を設定 */
+  color: white; /* 文字色を白に設定 */
+  border-radius: 5px; /* 角を少し丸くする */
+  transition: background-color 0.3s; /* 背景色の変化に0.3秒のアニメーションを追加 */
 }
 
+/* 停止ボタンとリセットボタンがホバーされた時のスタイリング */
 .stop-button:hover,
 #reset:hover {
-  background-color: #0056b3; /* ホバー時の色を変更 */
+  background-color: #0056b3; /* ホバー時の背景色を暗い青に変更 */
 }
